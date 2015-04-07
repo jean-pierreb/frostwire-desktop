@@ -106,6 +106,10 @@ public class TorrentFetcherDownload implements BTDownload {
     public void resume() {
     }
 
+    @Override
+    public void resume(boolean automanage) {
+    }
+
     public File getSaveLocation() {
         return null;
     }

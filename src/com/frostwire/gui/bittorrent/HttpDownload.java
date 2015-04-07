@@ -177,6 +177,11 @@ public class HttpDownload implements BTDownload {
     }
 
     @Override
+    public void resume(boolean automanage) {
+        resume();
+    }
+
+    @Override
     public int getProgress() {
         if (state == TransferState.CHECKING) {
             return md5CheckingProgress;

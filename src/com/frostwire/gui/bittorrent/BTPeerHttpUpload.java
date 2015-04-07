@@ -98,6 +98,10 @@ public class BTPeerHttpUpload implements BTDownload {
     }
 
     @Override
+    public void resume(boolean automanage) {
+    }
+
+    @Override
     public int getProgress() {
         return upload.getProgress();
     }

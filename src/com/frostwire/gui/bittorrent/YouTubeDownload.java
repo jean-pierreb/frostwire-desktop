@@ -185,6 +185,10 @@ public class YouTubeDownload implements BTDownload {
     }
 
     @Override
+    public void resume(boolean automanage) {
+    }
+
+    @Override
     public int getProgress() {
         int progress = -1;
 

@@ -53,6 +53,8 @@ public interface BTDownload {
 
     public void resume();
 
+    public void resume(boolean automanage);
+
     public int getProgress();
 
     public long getBytesReceived();

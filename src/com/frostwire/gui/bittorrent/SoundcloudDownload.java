@@ -181,6 +181,11 @@ public class SoundcloudDownload implements BTDownload {
     }
 
     @Override
+    public void resume(boolean automanage) {
+        resume();
+    }
+
+    @Override
     public int getProgress() {
         if (size <= 0) {
             return -1;

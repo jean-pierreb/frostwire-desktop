@@ -148,6 +148,11 @@ public class BittorrentDownload implements com.frostwire.gui.bittorrent.BTDownlo
     }
 
     @Override
+    public void resume(boolean automanage) {
+        dl.resume(automanage);
+    }
+
+    @Override
     public int getProgress() {
         return dl.getProgress();
     }

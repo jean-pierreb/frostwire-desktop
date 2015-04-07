@@ -239,7 +239,7 @@ final class BTDownloadActions {
 
             if (allowedToResume) {
                 for (int i = 0; i < downloaders.length; i++) {
-                    downloaders[i].resume();
+                    downloaders[i].resume(false);
 
                     if (downloaders[i].isPartialDownload() && downloaders[i] instanceof BittorrentDownload) {
                         resumedAPartial = true;
